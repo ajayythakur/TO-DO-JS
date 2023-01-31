@@ -216,8 +216,17 @@ box-shadow: 2px 2px 5px grey;
 
 @media (min-width:320px) and (max-width:465px){
 #aligncontainertxt{
-margin-left: 0%;
-text-align: center;
+margin-left: -80px;
+font-size: 20px;
+text-align: left; 
+}
+#additem{
+  margin:0px 0px 0px -40px;
+}
+
+#homepgtxt {
+    font-size: 16px;
+    margin-left: 0px;
 }
 #container2{
   height:200px;
@@ -237,11 +246,17 @@ text-align: center;
 #inputbox{
   width: 250px;
 }
-#cardId{
+.card-1{
+  width: 208px;
+  height: 285px;
+  overflow: hidden;
+}
+#list-container {
   display: flex;
+  justify-content: space-between;
+  margin-left:5rem;
+  flex-wrap: wrap;
   flex-direction: column;
-  width: 300px;
-  height: 300px;
 }
 }
 

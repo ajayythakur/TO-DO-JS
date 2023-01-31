@@ -47,7 +47,7 @@ function addDataObj(){
     let iconDelete = document.createElement("i");
 
     divElement.setAttribute("class", "card-1");
-    divElement.setAttribute("id", "cardId");
+    divElement.setAttribute("id", `cardId${Date.now()}`);
     headDiv.setAttribute("class", "head-div");
     headDiv.setAttribute("id", "head-div-Id");
     middleDiv.setAttribute("class", "middle-div");
@@ -161,8 +161,9 @@ function addItem(){
 
 
   miniItemDiv.setAttribute("class", "mini-item-div");
-  itemSpan.setAttribute("id", "mini-item");
-  cancelItemSpan.setAttribute("id", "cancel-item");
+  miniItemDiv.setAttribute("id", `${Date.now()}`)
+  itemSpan.setAttribute("id", `mini-item${Date.now()}`);
+  cancelItemSpan.setAttribute("id", `cancel-item${Date.now()}`);
 
 
   miniItemDiv.appendChild(itemSpan);
